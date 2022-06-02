@@ -24,9 +24,9 @@ SAP Basis 7.4 or higher
 
 You can install ABAP Differ using [abapGit](https://github.com/abapGit/abapGit) either creating a new online repository for https://github.com/Marc-Bernard-Tools/ABAP-HTML-Diff or downloading the repository [ZIP file](https://github.com/Marc-Bernard-Tools/ABAP-HTML-Diff/archive/main.zip) and creating a new offline repository.
 
-We recommend using package `$ABAPHTMLDIFF`.
+We recommend using package `$HTMLDIFF`.
 
-## Usage: HTML Diff
+## Usage
 
 **Diffing HTML**
 

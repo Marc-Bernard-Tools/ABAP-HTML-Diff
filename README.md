@@ -28,7 +28,7 @@ We recommend using package `$HTMLDIFF`.
 
 ## Usage
 
-**Diffing HTML**
+### Diffing HTML
 
 The following produces the diff of two example HTML snippets:
 
@@ -116,7 +116,7 @@ Using CSS classes, the result will distinguish between inserts (class `diffins`)
 
 See the [test classes](https://github.com/Marc-Bernard-Tools/ABAP-Differ/blob/main/src/zcl_htmldiff.clas.testclasses.abap) for more examples.
 
-**Diffing Text**
+### Diffing Text
 
 todo
 

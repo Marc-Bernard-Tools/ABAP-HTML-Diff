@@ -210,7 +210,7 @@
 		},
 		"empty_line_in_statement": {
 			"allowChained": false,
-			"exclude": [],
+			"exclude": [".*"],
 			"severity": "Error"
 		},
 		"empty_statement": {

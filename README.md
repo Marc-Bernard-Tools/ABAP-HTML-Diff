@@ -148,6 +148,24 @@ Result:
 a <ins>b </ins>c
 ```
 
+Example 2:
+
+```abap
+lv_original = 'a b c'.
+
+lv_modified = 'a c'.
+
+lv_diff = li_htmldiff->textdiff(
+  iv_before = lv_original
+  iv_after  = lv_modified ).
+```
+
+Result:
+
+```text
+a <del>b </del>c
+```
+
 ### Styling
 
 Here's an examle for styling the insertions and deletions using CSS.

@@ -120,7 +120,7 @@ There are a few other options you can set in the `constructor`:
 
 Using CSS classes, the result will distinguish between inserts (class `diffins`), deletes (class `diffdel`), and updates (class `diffmod`).
 
-See the [test classes](https://github.com/Marc-Bernard-Tools/ABAP-Differ/blob/main/src/zcl_htmldiff.clas.testclasses.abap) for more examples.
+See the [test classes](https://github.com/Marc-Bernard-Tools/ABAP-HTML-Diff/blob/main/src/zcl_htmldiff.clas.testclasses.abap) for more examples.
 
 ### Diffing Text
 

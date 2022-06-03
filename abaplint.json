@@ -17,7 +17,7 @@
 	},
 	"rules": {
 		"7bit_ascii": {
-			"exclude": [".*testclasses.*"],
+			"exclude": [],
 			"severity": "Error"
 		},
 		"abapdoc": {
@@ -256,7 +256,7 @@
 		"forbidden_void_type": {
 			"check": [
 				"^stringtab$",
-				"^char1$",
+				"^char[0-9]+$",
 				"^int4$",
 				"^rs_c_true$",
 				"^rs_c_false$",
@@ -297,7 +297,7 @@
 			"severity": "Error"
 		},
 		"identical_contents": {
-			"exclude": [".*"],
+			"exclude": [],
 			"severity": "Error"
 		},
 		"identical_form_names": {
@@ -485,7 +485,7 @@
 			"msag": "^Z",
 			"patternKind": "required",
 			"pinf": "^Z",
-			"prog": "^Z_HTMLDIFF",
+			"prog": "^Z",
 			"severity": "Error",
 			"shlp": "^Z",
 			"ssfo": "^Z",

@@ -68,7 +68,7 @@ lv_modified = '\n'
 REPLACE ALL OCCURRENCES OF '\n' IN lv_original WITH cl_abap_char_utilities=>newline.
 REPLACE ALL OCCURRENCES OF '\n' IN lv_modified WITH cl_abap_char_utilities=>newline.
   
-CREATE OBJECT li_differ TYPE zcl_htmldiff.
+CREATE OBJECT li_htmldiff TYPE zcl_htmldiff.
   
 lv_diff = li_htmldiff->htmldiff(
   iv_before   = lv_original

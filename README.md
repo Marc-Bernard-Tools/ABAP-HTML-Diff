@@ -68,7 +68,7 @@ lv_modified = '\n'
 REPLACE ALL OCCURRENCES OF '\n' IN lv_original WITH cl_abap_char_utilities=>newline.
 REPLACE ALL OCCURRENCES OF '\n' IN lv_modified WITH cl_abap_char_utilities=>newline.
   
-CREATE OBJECT li_htmldiff TYPE zcl_htmldiff.
+li_htmldiff = zcl_htmldiff=>create( ).
   
 lv_diff = li_htmldiff->htmldiff(
   iv_before   = lv_original
@@ -111,7 +111,7 @@ Result:
     <span>This is some <del>interesting</del><ins>new</ins> text.</span>
 ```
 
-There are a few other options you can set in the `constructor`:
+There are a few other options you can set in the `constructor`/`create` statement:
 
 - `iv_inserts`: Show `<ins>` tags (default: on)
 - `iv_deletes`: Show `<del>` tags (default: on)
@@ -124,15 +124,31 @@ See the [test classes](https://github.com/Marc-Bernard-Tools/ABAP-HTML-Diff/blob
 
 ### Diffing Text
 
-todo
+The following produces the diff of two example text snippets:
 
 ```abap
+DATA:
+  lv_original TYPE string,
+  lv_modified TYPE string,
+  lv_diff     TYPE string,
+  li_htmldiff TYPE REF TO zif_htmldiff.
+
+lv_original = 'a c'.
+
+lv_modified = 'a b c'.
+
 lv_diff = li_htmldiff->textdiff(
   iv_before = lv_original
   iv_after  = lv_modified ).
 ```  
 
-**Styling**
+Result:
+
+```text
+a <ins>b </ins>c
+```
+
+### Styling
 
 Here's an examle for styling the insertions and deletions using CSS.
 

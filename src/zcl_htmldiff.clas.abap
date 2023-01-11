@@ -17,7 +17,7 @@ CLASS zcl_htmldiff DEFINITION
 
   PUBLIC SECTION.
 
-    CONSTANTS c_version TYPE string VALUE '1.0.0' ##NEEDED.
+    CONSTANTS c_version TYPE string VALUE '1.0.1' ##NEEDED.
 
     INTERFACES zif_htmldiff.
 
@@ -762,8 +762,8 @@ CLASS zcl_htmldiff IMPLEMENTATION.
 
   METHOD is_character.
 
-    " Alphanumeric characters (includes underscore)
-    FIND REGEX '[\w]' IN iv_input.
+    " Alphanumeric characters (includes underscore) plus characters to identify HTML symbol entities
+    FIND REGEX '[\w&#;]' IN iv_input.
 
     rv_result = xsdbool( sy-subrc = 0 ).
 

@@ -1,7 +1,7 @@
 ![Version](https://img.shields.io/endpoint?url=https://shield.abap.space/version-shield-json/github/Marc-Bernard-Tools/ABAP-HTML-Diff/src/zcl_htmldiff.clas.abap/c_version&label=Version&color=blue)
 
 [![License](https://img.shields.io/github/license/Marc-Bernard-Tools/ABAP-HTML-Diff?label=License&color=green)](LICENSE)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?color=green)](CODE_OF_CONDUCT.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?color=green)](https://github.com/Marc-Bernard-Tools/.github/blob/main/CODE_OF_CONDUCT.md)
 [![REUSE Status](https://api.reuse.software/badge/github.com/Marc-Bernard-Tools/ABAP-HTML-Diff)](https://api.reuse.software/info/github.com/Marc-Bernard-Tools/ABAP-HTML-Diff)
 
 # ABAP HTML Diff

@@ -1229,15 +1229,11 @@ CLASS ltcl_htmldiff_test_3 IMPLEMENTATION.
 
   METHOD html_symbol_entities.
 
-    DATA:
-      lv_act TYPE string,
-      lv_exp TYPE string.
-
-    lv_act = lcl_helper=>htmldiff(
+    DATA(lv_act) = lcl_helper=>htmldiff(
       iv_before = 'a &lt; c'
       iv_after  = 'a &gt; c' ).
 
-    lv_exp = 'a <del>&lt;</del><ins>&gt;</ins> c'.
+    DATA(lv_exp) = 'a <del>&lt;</del><ins>&gt;</ins> c'.
 
     cl_abap_unit_assert=>assert_equals(
       act = lv_act
@@ -1247,15 +1243,11 @@ CLASS ltcl_htmldiff_test_3 IMPLEMENTATION.
 
   METHOD tags_and_entities.
 
-    DATA:
-      lv_act TYPE string,
-      lv_exp TYPE string.
-
-    lv_act = lcl_helper=>htmldiff(
+    DATA(lv_act) = lcl_helper=>htmldiff(
       iv_before = '&lt;ls_var&gt;'
       iv_after  = '<span class="keyword">FIELD-SYMBOL</span>(&lt;ls_var&gt;)' ).
 
-    lv_exp = '<span class="keyword"><ins>FIELD-SYMBOL</ins></span><ins>(</ins>&lt;ls_var&gt;<ins>)</ins>'.
+    DATA(lv_exp) = '<span class="keyword"><ins>FIELD-SYMBOL</ins></span><ins>(</ins>&lt;ls_var&gt;<ins>)</ins>'.
 
     cl_abap_unit_assert=>assert_equals(
       act = lv_act
